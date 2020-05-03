@@ -43,7 +43,7 @@ var solution = function (isBadVersion) {
         let right = n;
         let mid = 0;
         while (left < right) {
-            mid = left + (right - left) / 2;
+            mid = left + Math.floor((right - left) / 2);
             if (isBadVersion(mid)) right = mid;
             else left = mid + 1
         }
