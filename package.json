@@ -1,0 +1,19 @@
+{
+  "name": "may-leetcoding-challenge",
+  "version": "1.0.0",
+  "description": "This is just my personal repo on showing my solutions to the problem posted here: https://leetcode.com/explore/challenge/card/May-Leetcoding-challenge. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karljosebuena/may-leetcoding-challenge.git"
+  },
+  "author": "Karl Jose Buena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karljosebuena/may-leetcoding-challenge/issues"
+  },
+  "homepage": "https://github.com/karljosebuena/may-leetcoding-challenge#readme"
+}
