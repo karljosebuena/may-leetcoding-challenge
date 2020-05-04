@@ -49,14 +49,22 @@ module.exports = () => {
         // });
         // return canConstruct;
 
-        // SOLUTION 3:
+        // SOLUTION 3.a:
         // Runtime: 76 ms
+        // let newMaganize = magazine;
+        // for (let index = 0; index < ransomNote.length; index++) {
+        //     newMaganize = newMaganize.replace(ransomNote[index], '1');
+        // }
+        // const foundLetters = newMaganize.match(/1/g) || [];
+        // return ransomNote.length === foundLetters.length;
+
+        // SOLUTION 3.b:
+        // Runtime: 64 ms
         let newMaganize = magazine;
         for (let index = 0; index < ransomNote.length; index++) {
-            newMaganize = newMaganize.replace(ransomNote[index], '1');
+            newMaganize = newMaganize.replace(ransomNote[index], '');
         }
-        const foundLetters = newMaganize.match(/1/g) || [];
-        return ransomNote.length === foundLetters.length;
+        return ransomNote.length + newMaganize.length === magazine.length;
     };
 
     return {
