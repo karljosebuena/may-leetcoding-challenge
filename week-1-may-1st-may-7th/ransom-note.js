@@ -19,19 +19,44 @@ module.exports = () => {
      * @return {boolean}
      */
     var canConstruct = function (ransomNote, magazine) {
-        let canConstruct = true;
-        const ransomNoteArr = ransomNote.split('').sort();
-        const magazineArr = magazine.split('').sort();
+        // SOLUTION 1:
+        // Runtime: 1740 ms
+        // let canConstruct = true;
+        // const ransomNoteArr = ransomNote.split('').sort();
+        // const magazineArr = magazine.split('').sort();
 
-        ransomNoteArr.map(element => {
-            if (magazineArr.find(item => item === element)) {
-                const indexToDelete = magazineArr.findIndex(item => item === element);
-                magazineArr.splice(indexToDelete, 1);
-            }
-            else canConstruct = false
-        });
+        // ransomNoteArr.map(element => {
+        //     if (magazineArr.find(item => item === element)) {
+        //         const indexToDelete = magazineArr.findIndex(item => item === element);
+        //         magazineArr.splice(indexToDelete, 1);
+        //     }
+        //     else canConstruct = false
+        // });
+        // return canConstruct
 
-        return canConstruct
+        // SOLUTION 2:
+        // Runtime: 964 ms
+        // const ransomNoteArr = ransomNote.split('').sort();
+        // const magazineArr = magazine.split('').sort();
+        // let canConstruct = true;
+        // let indexToDelete = -1;
+        // ransomNoteArr.map(element => {
+        //     indexToDelete = magazineArr.findIndex(item => item === element);
+        //     if (indexToDelete > -1) {
+        //         magazineArr.splice(indexToDelete, 1);
+        //     }
+        //     else return canConstruct = false;
+        // });
+        // return canConstruct;
+
+        // SOLUTION 3:
+        // Runtime: 76 ms
+        let newMaganize = magazine;
+        for (let index = 0; index < ransomNote.length; index++) {
+            newMaganize = newMaganize.replace(ransomNote[index], '1');
+        }
+        const foundLetters = newMaganize.match(/1/g) || [];
+        return ransomNote.length === foundLetters.length;
     };
 
     return {
