@@ -20,7 +20,7 @@ module.exports = () => {
      */
     var canConstruct = function (ransomNote, magazine) {
         // SOLUTION 1:
-        // Runtime: 1740 ms
+        // Runtime: 1740 ms in leetcode
         // let canConstruct = true;
         // const ransomNoteArr = ransomNote.split('').sort();
         // const magazineArr = magazine.split('').sort();
@@ -35,7 +35,7 @@ module.exports = () => {
         // return canConstruct
 
         // SOLUTION 2:
-        // Runtime: 964 ms
+        // Runtime: 964 ms in leetcode
         // const ransomNoteArr = ransomNote.split('').sort();
         // const magazineArr = magazine.split('').sort();
         // let canConstruct = true;
@@ -50,7 +50,7 @@ module.exports = () => {
         // return canConstruct;
 
         // SOLUTION 3.a:
-        // Runtime: 76 ms
+        // Runtime: 76 ms in leetcode
         // let newMaganize = magazine;
         // for (let index = 0; index < ransomNote.length; index++) {
         //     newMaganize = newMaganize.replace(ransomNote[index], '1');
@@ -59,7 +59,7 @@ module.exports = () => {
         // return ransomNote.length === foundLetters.length;
 
         // SOLUTION 3.b:
-        // Runtime: 64 ms
+        // Runtime: 64 ms in leetcode
         let newMaganize = magazine;
         for (let index = 0; index < ransomNote.length; index++) {
             newMaganize = newMaganize.replace(ransomNote[index], '');

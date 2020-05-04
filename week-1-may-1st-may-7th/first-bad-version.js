@@ -32,6 +32,7 @@
 /**
  * @param {function} isBadVersion()
  * @return {function}
+ * Runtime: 44 ms in leetcode
  */
 var solution = function (isBadVersion) {
     /**

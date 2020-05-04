@@ -20,6 +20,12 @@
 // The characters in J are distinct.
 
 module.exports = () => {
+    /**
+     * @param {string} J
+     * @param {string} S
+     * @return {number}
+     * Runtime: 56 ms in leetcode
+     */
     var numJewelsInStones = function (J, S) {
         const jewelsArray = J.split('');
         const stonesArray = S.split('');

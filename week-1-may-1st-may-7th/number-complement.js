@@ -20,6 +20,7 @@ module.exports = () => {
 /**
  * @param {number} num
  * @return {number}
+ * Runtime: 68 ms in leetcode
  */
     var findComplement = function (num) {
         const binaryNum = num.toString(2);
