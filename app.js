@@ -13,8 +13,15 @@
 // console.timeEnd('ransomNote');
 
 // Instance of solution to Number Complement problem
-console.time('numberComplement');
-const  numberComplement = require('./week-1-may-1st-may-7th/number-complement')();
-const result = numberComplement.findComplement(2);
-console.log(result);
-console.timeEnd('numberComplement');
+// console.time('numberComplement');
+// const  numberComplement = require('./week-1-may-1st-may-7th/number-complement')();
+// const result = numberComplement.findComplement(2);
+// console.log(result);
+// console.timeEnd('numberComplement');
+
+// Instance of solution to First Unique Character in a String problem
+console.time('firstUniqueChar');
+const  firstUniqueChar = require('./week-1-may-1st-may-7th/first-unique-character')();
+const charIndex = firstUniqueChar.firstUniqChar("xx");
+console.log(charIndex);
+console.timeEnd('firstUniqueChar');
