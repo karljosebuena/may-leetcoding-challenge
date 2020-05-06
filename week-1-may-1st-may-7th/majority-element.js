@@ -16,16 +16,24 @@ module.exports = () => {
     /**
      * @param {number[]} nums
      * @return {number}
-     * Runtime: 76 ms
      */
     var majorityElement = function (nums) {
-        const resObj = {};
-        for (let index = 0; index < nums.length; index++) {
-            if (nums[index].toString() in resObj)
-                resObj[nums[index]] = ++resObj[nums[index]];
-            else
-                resObj[nums[index]] = 1;
-        }
+        // Runtime: 76 ms
+        // const resObj = {};
+        // for (let index = 0; index < nums.length; index++) {
+        //     if (nums[index].toString() in resObj)
+        //         resObj[nums[index]] = ++resObj[nums[index]];
+        //     else
+        //         resObj[nums[index]] = 1;
+        // }
+        // return Object.entries(resObj).find(item => item[1] === Object.values(resObj).sort((a, b) => a - b).reverse()[0])[0];
+
+        // Runtime: 60 ms
+        const resObj = nums.reduce((allNumbers, currentNumber) => {
+            if (currentNumber in allNumbers) allNumbers[currentNumber]++;
+            else allNumbers[currentNumber] = 1;
+            return allNumbers;
+        }, {});
         return Object.entries(resObj).find(item => item[1] === Object.values(resObj).sort((a, b) => a - b).reverse()[0])[0];
     };
     return { majorityElement };

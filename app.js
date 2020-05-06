@@ -29,6 +29,6 @@
 // Instance of solution to Majority Element problem
 console.time('majorityElement');
 const  majorityElementService = require('./week-1-may-1st-may-7th/majority-element')();
-const result = majorityElementService.majorityElement([11,11,2]);
+const result = majorityElementService.majorityElement([11,11,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0]);
 console.log(result);
 console.timeEnd('majorityElement');
