@@ -20,8 +20,15 @@
 // console.timeEnd('numberComplement');
 
 // Instance of solution to First Unique Character in a String problem
-console.time('firstUniqueChar');
-const  firstUniqueChar = require('./week-1-may-1st-may-7th/first-unique-character')();
-const charIndex = firstUniqueChar.firstUniqChar("xx");
-console.log(charIndex);
-console.timeEnd('firstUniqueChar');
+// console.time('firstUniqueChar');
+// const  firstUniqueChar = require('./week-1-may-1st-may-7th/first-unique-character')();
+// const charIndex = firstUniqueChar.firstUniqChar("xx");
+// console.log(charIndex);
+// console.timeEnd('firstUniqueChar');
+
+// Instance of solution to Majority Element problem
+console.time('majorityElement');
+const  majorityElementService = require('./week-1-may-1st-may-7th/majority-element')();
+const result = majorityElementService.majorityElement([11,11,2]);
+console.log(result);
+console.timeEnd('majorityElement');
