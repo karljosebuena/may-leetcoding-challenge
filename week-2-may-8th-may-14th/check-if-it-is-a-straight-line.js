@@ -21,17 +21,25 @@ module.exports = () => {
     /**
      * @param {number[][]} coordinates
      * @return {boolean}
-     * Slore equation slope=(y2-y1)/(x2-x1)
-     * Runtime: 64 ms
+     * Slope equation slope=(y2-y1)/(x2-x1)
      */
     var checkStraightLine = function (coordinates) {
-        const getSlope = (p1, p2) => {
-            return parseFloat((p2[1] - p1[1]) / (p2[0] - p1[0]));
-        }
-        const baseSlope = getSlope(coordinates[1], coordinates[0]);
+        // Runtime: 64 ms
+        // const getSlope = (p1, p2) => {
+        //     return parseFloat((p2[1] - p1[1]) / (p2[0] - p1[0]));
+        // }
+        // const baseSlope = getSlope(coordinates[1], coordinates[0]);
 
+        // for (let index = 2; index < coordinates.length; index++) {
+        //     if (baseSlope !== getSlope(coordinates[index], coordinates[0]))
+        //         return false;
+        // }
+        // return true;
+
+        // Runtime: 48 ms
         for (let index = 2; index < coordinates.length; index++) {
-            if (baseSlope !== getSlope(coordinates[index], coordinates[0]))
+            if ((coordinates[1][1] - coordinates[0][1]) / (coordinates[1][0] - coordinates[0][0])
+                !== (coordinates[index][1] - coordinates[0][1]) / (coordinates[index][0] - coordinates[0][0]))
                 return false;
         }
         return true;
