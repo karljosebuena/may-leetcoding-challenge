@@ -27,8 +27,15 @@
 // console.timeEnd('firstUniqueChar');
 
 // Instance of solution to Majority Element problem
-console.time('majorityElement');
-const  majorityElementService = require('./week-1-may-1st-may-7th/majority-element')();
-const result = majorityElementService.majorityElement([11,11,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0]);
+// console.time('majorityElement');
+// const  majorityElementService = require('./week-1-may-1st-may-7th/majority-element')();
+// const result = majorityElementService.majorityElement([11,11,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0]);
+// console.log(result);
+// console.timeEnd('majorityElement');
+
+// Instance of solution to Check If It Is a Straight Line
+console.time('isStraightLine');
+const isStraightLine = require('./week-2-may-8th-may-14th/check-if-it-is-a-straight-line')();
+const result = isStraightLine.checkStraightLine([[0,1],[1,3],[-4,-7],[5,11]]);
 console.log(result);
-console.timeEnd('majorityElement');
+console.timeEnd('isStraightLine');
