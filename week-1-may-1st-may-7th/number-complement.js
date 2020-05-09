@@ -16,6 +16,8 @@
 // You could assume no leading zero bit in the integer’s binary representation.
 // This question is the same as 1009: https://leetcode.com/problems/complement-of-base-10-integer/
 
+// Link: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3319/
+
 module.exports = () => {
 /**
  * @param {number} num

@@ -12,6 +12,8 @@
 // Input: [2,2,1,1,1,2,2]
 // Output: 2
 
+// Link: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3321/
+
 module.exports = () => {
     /**
      * @param {number[]} nums

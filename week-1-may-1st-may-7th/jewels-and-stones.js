@@ -19,6 +19,8 @@
 // S and J will consist of letters and have length at most 50.
 // The characters in J are distinct.
 
+// Link: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3317/
+
 module.exports = () => {
     /**
      * @param {string} J

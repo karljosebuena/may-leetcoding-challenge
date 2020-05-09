@@ -12,6 +12,8 @@
 // canConstruct("aa", "ab") -> false
 // canConstruct("aa", "aab") -> true
 
+// Link: https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/534/week-1-may-1st-may-7th/3318/
+
 module.exports = () => {
     /**
      * @param {string} ransomNote
