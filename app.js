@@ -34,8 +34,16 @@
 // console.timeEnd('majorityElement');
 
 // Instance of solution to Check If It Is a Straight Line
-console.time('isStraightLine');
-const isStraightLine = require('./week-2-may-8th-may-14th/check-if-it-is-a-straight-line')();
-const result = isStraightLine.checkStraightLine([[0,1],[1,3],[-4,-7],[5,11]]);
+// console.time('isStraightLine');
+// const isStraightLine = require('./week-2-may-8th-may-14th/check-if-it-is-a-straight-line')();
+// const result = isStraightLine.checkStraightLine([[0,1],[1,3],[-4,-7],[5,11]]);
+// console.log(result);
+// console.timeEnd('isStraightLine');
+
+//////////////// OTHER CHALLENGES /////////////////
+// Instance of solution to Valid Anagram
+console.time('isAnagram');
+const anaChecker = require('./other-challenges/valid-anagram')();
+const result = anaChecker.isAnagram('aacc', 'ccac');
 console.log(result);
-console.timeEnd('isStraightLine');
+console.timeEnd('isAnagram');
