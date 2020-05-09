@@ -40,10 +40,17 @@
 // console.log(result);
 // console.timeEnd('isStraightLine');
 
+// Instance of solution to Valid Perfect Square
+console.time('validPerfectSquare');
+const perrfectSquare = require('./week-2-may-8th-may-14th/valid-perfect-square')();
+const result = perrfectSquare.isPerfectSquare(855);
+console.log(result);
+console.timeEnd('validPerfectSquare');
+
 //////////////// OTHER CHALLENGES /////////////////
 // Instance of solution to Valid Anagram
-console.time('isAnagram');
-const anaChecker = require('./other-challenges/valid-anagram')();
-const result = anaChecker.isAnagram('aacc', 'ccac');
-console.log(result);
-console.timeEnd('isAnagram');
+// console.time('isAnagram');
+// const anaChecker = require('./other-challenges/valid-anagram')();
+// const result = anaChecker.isAnagram('aacc', 'ccac');
+// console.log(result);
+// console.timeEnd('isAnagram');
