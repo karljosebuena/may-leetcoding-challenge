@@ -41,11 +41,18 @@
 // console.timeEnd('isStraightLine');
 
 // Instance of solution to Valid Perfect Square
-console.time('validPerfectSquare');
-const perrfectSquare = require('./week-2-may-8th-may-14th/valid-perfect-square')();
-const result = perrfectSquare.isPerfectSquare(855);
+// console.time('validPerfectSquare');
+// const perrfectSquare = require('./week-2-may-8th-may-14th/valid-perfect-square')();
+// const result = perrfectSquare.isPerfectSquare(855);
+// console.log(result);
+// console.timeEnd('validPerfectSquare');
+
+// Instance of solution to Find the Town Judge
+console.time('findTheTownJudge');
+const findTheTownJudge = require('./week-2-may-8th-may-14th/find-the-town-judge')();
+const result = findTheTownJudge.findJudge(1, []);
 console.log(result);
-console.timeEnd('validPerfectSquare');
+console.timeEnd('findTheTownJudge');
 
 //////////////// OTHER CHALLENGES /////////////////
 // Instance of solution to Valid Anagram
