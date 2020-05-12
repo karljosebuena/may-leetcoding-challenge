@@ -48,11 +48,18 @@
 // console.timeEnd('validPerfectSquare');
 
 // Instance of solution to Find the Town Judge
-console.time('findTheTownJudge');
-const findTheTownJudge = require('./week-2-may-8th-may-14th/find-the-town-judge')();
-const result = findTheTownJudge.findJudge(1, []);
+// console.time('findTheTownJudge');
+// const findTheTownJudge = require('./week-2-may-8th-may-14th/find-the-town-judge')();
+// const result = findTheTownJudge.findJudge(1, []);
+// console.log(result);
+// console.timeEnd('findTheTownJudge');
+
+// Instance of solution to  Single Element in a Sorted Array
+console.time('singleElementInSortedArray');
+const singleElementInSortedArray = require('./week-2-may-8th-may-14th/single-slement-in-a-sorted-array')();
+const result = singleElementInSortedArray.singleNonDuplicate([1,1,2,3,3,4,4,8,8]);
 console.log(result);
-console.timeEnd('findTheTownJudge');
+console.timeEnd('singleElementInSortedArray');
 
 //////////////// OTHER CHALLENGES /////////////////
 // Instance of solution to Valid Anagram
